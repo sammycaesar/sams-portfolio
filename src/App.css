@@ -9,3 +9,42 @@
   font-family: "Optima", serif;
   background-color: #23193b;
 }
+
+body {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 35px;
+  font-family: "Optima", serif;
+  background-color: #23193b;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+h1 span {
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+h2 {
+  color: #fa9182;
+  letter-spacing: 0.1rem;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+p {
+  font-family: "DM Mono", monospace;
+}
+p span {
+  color: #fa9182;
+}
+
+u {
+  text-decoration-color: #fa9182;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+}
