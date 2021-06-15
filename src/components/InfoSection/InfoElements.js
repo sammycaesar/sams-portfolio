@@ -7,7 +7,7 @@ export const InfoContainer = styled.div`
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
-  padding 0 15rem;
+  padding 5rem 15rem 5rem 15rem;
   justify-content: center;
   
 `;
