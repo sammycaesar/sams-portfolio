@@ -1,12 +1,15 @@
 import React from "react";
-import { InfoContainer, Heading, Content } from "./InfoElements";
+import { InfoContainer, Column, Heading, Content } from "./InfoElements";
 
-const InfoSection = ({ id, headline, content }) => {
+const InfoSection = ({ id, headline, email, socials }) => {
   return (
     <>
       <InfoContainer id={id}>
-        <Heading>{headline}</Heading>
-        <Content>{content}</Content>
+        <Column>
+          <Heading>{headline}</Heading>
+          <Content>{email}</Content>
+          <Content>{socials}</Content>
+        </Column>
       </InfoContainer>
     </>
   );

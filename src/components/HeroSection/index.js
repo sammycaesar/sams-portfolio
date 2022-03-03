@@ -1,41 +1,28 @@
 import React from "react";
-import SamChilling from "../../images/sam-chilling.png";
-import { CgMouse } from "react-icons/cg";
+import Shape from "../../images/hero-shape.svg";
 import {
   HeroContainer,
   HeroWrapper,
+  HeroShape,
   HeroRow,
   Column1,
   TextWrapper,
   HeroH1,
   Column2,
-  ImgWrap,
-  Img,
 } from "./HeroElements";
 
 const HeroSection = () => {
   return (
     <HeroContainer id='home'>
       <HeroWrapper>
+        <HeroShape src={Shape} alt='Intro Shape' />
         <HeroRow>
           <Column1>
             <TextWrapper>
-              <HeroH1>
-                {" "}
-                <span>
-                  hey, i'm <u>sam</u>
-                </span>{" "}
-                <br></br>a front end <br></br>developer
-              </HeroH1>
+              <HeroH1></HeroH1>
             </TextWrapper>
-            <CgMouse />
           </Column1>
-
-          <Column2>
-            <ImgWrap>
-              <Img src={SamChilling} alt='Sam Coding Imagery' />
-            </ImgWrap>
-          </Column2>
+          <Column2></Column2>
         </HeroRow>
       </HeroWrapper>
     </HeroContainer>

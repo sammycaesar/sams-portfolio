@@ -3,14 +3,15 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  height: 80px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
-  position: sticky;
+  font-size: 1.25rem;
+  position: relative;
   top: 0;
-  z-index: 10;
+
+  margin: 0 5% 0 5%;
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -19,24 +20,19 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled.div`
   display: flex;
-
   justify-content: space-between;
-  height: 80px;
-  z-index: 1;
   width: 100%;
-  padding: 0 24px;
-  max-width: 1100px;
 `;
 
 export const NavLogo = styled(LinkR)`
-  color: white;
-  justify-self: flex-start;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  line-height: 50px;
   display: flex;
   align-items: center;
-  margin-left: 24px;
-  font-weight: bold;
+  font-weight: regular;
+  font-family: "Space Grotesk", sans-serif;
+  color: #7f7cff;
   text-decoration: none;
 `;
 
@@ -51,17 +47,14 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #fff;
   }
 `;
 
 export const NavMenu = styled.ul`
   display: flex;
-  background: transparent;
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: -22px;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -69,26 +62,22 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  background: transparent;
   height: 80px;
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: white;
-
   display: flex;
-  align-items: center;
   text-decoration: none;
-  padding: 0 2rem;
+  padding: 0 2.5rem;
   height: 100%;
   cursor: pointer;
 
   &:active {
-    border-bottom: 3px solid #fa9182;
+    border-bottom: 3px solid #7f7cff;
   }
 
   &:hover {
-    color: #fa9182;
+    color: #7f7cff;
     transition: 0.2s ease-in-out;
   }
 `;
