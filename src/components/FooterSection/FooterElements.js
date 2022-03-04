@@ -6,12 +6,15 @@ export const FooterContainer = styled.div`
 `;
 
 export const FooterWrapper = styled.div`
-  display: block;
-  width: 100%;
+  text-align: center;
 `;
 
 export const FooterShape = styled.img`
-  display: inline-flex;
   width: 100%;
   height: 500px;
+  margin-bottom: -5rem;
 `;
+
+export const FooterSocials = styled.div``;
+
+export const FooterInfo = styled.div``;

@@ -1,20 +1,22 @@
-export const ProjectData = [
+import Kafe from "../../images/kafe-project.png";
+
+export const projectData = [
   {
     id: "drink recipes",
     title: "kafé drink recipes",
     technology: "react.js",
-    image: "",
+    image: Kafe,
   },
   {
-    id: "project 2",
-    title: "test 2",
+    id: "beer website",
+    title: "beer bewery",
     technology: "react.js",
     image: "",
   },
   {
-    id: "project 3",
-    title: "project 3",
-    technology: "react.js",
+    id: "pricing",
+    title: "simple traffic based pricing",
+    technology: "javascript",
     image: "",
   },
   {

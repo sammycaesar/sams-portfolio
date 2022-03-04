@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.div`
-  margin-top: 20%;
+  margin-top: 10%;
   padding-left: 70px;
   display: grid;
   grid-template-columns: 65%;

@@ -3,7 +3,9 @@ import { FaBars } from "react-icons/fa";
 import {
   Nav,
   NavbarContainer,
+  NavLeft,
   NavLogo,
+  NavJob,
   MobileIcon,
   NavMenu,
   NavItem,
@@ -15,10 +17,10 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to='/'>
-            samantha caesar
-            <br /> front end developer
-          </NavLogo>
+          <NavLeft>
+            <NavLogo to='/'>samantha caesar</NavLogo>
+            <NavJob>front end developer</NavJob>
+          </NavLeft>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>

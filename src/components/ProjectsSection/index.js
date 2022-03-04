@@ -1,71 +1,71 @@
 // eslint-disable-next-line
 import React, { useRef, useState } from "react";
 
-import { Navigation, Pagination } from "swiper";
+import SwiperCore, { Navigation, Mousewheel } from "swiper";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
+import "./swiper.css";
+import { projectData } from "./data";
 
 import {
   ProjectContainer,
   Heading,
   SliderItem,
   SliderTech,
+  SliderImageBorder,
   SliderImage,
   SliderTitle,
 } from "./ProjectsSectionElements";
 
-const ProjectsSection = ({ id, title, technology, image }) => {
+SwiperCore.use([Mousewheel, Navigation]);
+
+const ProjectsSection = () => {
   return (
     <>
       <ProjectContainer>
         <Heading>projects</Heading>
         <Swiper
+          direction={"horizontal"}
+          mousewheel={{ sensitivity: 100, forceToAxis: true }}
           slidesPerView={3}
-          spaceBetween={0}
-          slidesPerGroup={2}
-          loop={true}
-          loopFillGroupWithBlank={true}
-          pagination={{ clickable: true }}
+          spaceBetween={10}
           navigation={true}
-          modules={[{ Pagination, Navigation }]}
+          loop={true}
+          modules={[{ Navigation, Mousewheel }]}
+          breakpoints={{
+            "@0.00": {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            "@0.75": {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            "@1.20": {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+          }}
         >
-          <SwiperSlide>
-            {" "}
-            <SliderItem id={id}>
-              {" "}
-              <SliderTech>{technology}</SliderTech>
-              <SliderImage>{image}</SliderImage>
-              <SliderTitle>{title}</SliderTitle>Slide 1
-            </SliderItem>
-          </SwiperSlide>
-          <SwiperSlide>
-            {" "}
-            <SliderItem id={id}>
-              <SliderTech>{technology}</SliderTech>
-              <SliderImage>{image}</SliderImage>
-              <SliderTitle>{title}</SliderTitle> Slide 2
-            </SliderItem>
-          </SwiperSlide>
-          <SwiperSlide>
-            {" "}
-            <SliderItem id={id}>
-              <SliderTech>{technology}</SliderTech>
-              <SliderImage>{image}</SliderImage>
-              <SliderTitle>{title}</SliderTitle> Slide 3
-            </SliderItem>
-          </SwiperSlide>
-          <SwiperSlide>
-            {" "}
-            <SliderItem id={id}>
-              <SliderTech>{technology}</SliderTech>
-              <SliderImage>{image}</SliderImage>
-              <SliderTitle>{title}</SliderTitle> Slide 4
-            </SliderItem>
-          </SwiperSlide>
+          {projectData.map((data, i) => {
+            return (
+              <SwiperSlide>
+                <SliderItem key={i}>
+                  <SliderTech>{data.technology}</SliderTech>
+                  <SliderImageBorder>
+                    <SliderImage>
+                      <img src={data.image} alt='' className='project-images' />
+                    </SliderImage>
+                  </SliderImageBorder>
+                  <SliderTitle>{data.title}</SliderTitle>
+                </SliderItem>
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
       </ProjectContainer>
     </>

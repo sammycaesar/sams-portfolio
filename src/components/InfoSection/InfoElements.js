@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const InfoContainer = styled.div`
   display: grid;
   grid-template-columns: 65%;
-  margin: 20% 5% 20% 7%;
+  margin: 10% 5% 0% 7%;
   justify-content: left;
 `;
 

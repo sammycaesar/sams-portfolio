@@ -8,7 +8,24 @@ const InfoSection = ({ id, headline, email, socials }) => {
         <Column>
           <Heading>{headline}</Heading>
           <Content>{email}</Content>
-          <Content>{socials}</Content>
+          <Content>
+            {socials}
+            <a
+              href='https://www.linkedin.com/in/samanthacaesar/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              LinkedIn
+            </a>{" "}
+            /{" "}
+            <a
+              href='https://github.com/sammycaesar'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Github
+            </a>
+          </Content>
         </Column>
       </InfoContainer>
     </>
