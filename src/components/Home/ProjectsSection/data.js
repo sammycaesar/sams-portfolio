@@ -1,18 +1,20 @@
 import Kafe from "../../../images/kafe-project.png";
 import Traffic from "../../../images/traffic-project.png";
+import Portfolio from "../../../images/portfolio-project.png";
+import Placeholder from "../../../images/coming-soon.png";
 
 export const projectData = [
   {
     id: "drink recipes",
     title: "kafé drink recipes",
-    technology: "react & api",
+    technology: "reactjs & api",
     image: Kafe,
   },
   {
-    id: "beer website",
-    title: "beer bewery",
-    technology: "react.js",
-    image: "",
+    id: "portfolio",
+    title: "portfolio",
+    technology: "reactjs",
+    image: Portfolio,
   },
   {
     id: "pricing",
@@ -21,9 +23,9 @@ export const projectData = [
     image: Traffic,
   },
   {
-    id: "undistans",
+    id: "placeholder",
     title: "coming soon",
-    technology: "react native",
-    image: "",
+    technology: "to be announced",
+    image: Placeholder,
   },
 ];
