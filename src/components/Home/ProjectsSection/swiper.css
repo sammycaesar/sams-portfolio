@@ -1,0 +1,19 @@
+/* Extra swiper CSS */
+
+.swiper-button-prev {
+  display: none;
+}
+.swiper-button-next {
+  display: block;
+  width: 200px;
+  color: black;
+  margin: 22% 2% 0 0;
+  position: absolute;
+  background-image: url("../../../images/project-arrow.svg") !important;
+  background-repeat: no-repeat;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
