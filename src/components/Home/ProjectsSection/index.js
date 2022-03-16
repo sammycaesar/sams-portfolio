@@ -19,6 +19,8 @@ import {
   SliderImageBorder,
   SliderImage,
   SliderTitle,
+  SliderContent,
+  SliderCode,
 } from "./ProjectsSectionElements";
 
 SwiperCore.use([Mousewheel, Navigation]);
@@ -26,7 +28,7 @@ SwiperCore.use([Mousewheel, Navigation]);
 const ProjectsSection = () => {
   return (
     <>
-      <ProjectContainer>
+      <ProjectContainer id='projects'>
         <Heading>projects</Heading>
         <Swiper
           direction={"horizontal"}
@@ -61,7 +63,13 @@ const ProjectsSection = () => {
                       <img src={data.image} alt='' className='project-images' />
                     </SliderImage>
                   </SliderImageBorder>
-                  <SliderTitle>{data.title}</SliderTitle>
+                  <SliderContent>
+                    <SliderTitle>{data.title}</SliderTitle>
+                    <SliderCode>
+                      {" "}
+                      <a href={data.url} target='_blank' rel='noreferrer' />
+                    </SliderCode>
+                  </SliderContent>
                 </SliderItem>
               </SwiperSlide>
             );

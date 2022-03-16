@@ -1,4 +1,6 @@
 import React from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
+
 import { FaBars } from "react-icons/fa";
 import {
   Nav,
@@ -26,13 +28,52 @@ const Navbar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to='projects'>projects</NavLinks>
+              <NavLinks>
+                {" "}
+                <Link
+                  activeClass='active'
+                  to='projects'
+                  spy={true}
+                  smooth={true}
+                  offset={10}
+                  duration={600}
+                  delay={50}
+                >
+                  projects
+                </Link>
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='about'>about</NavLinks>
+              <NavLinks>
+                {" "}
+                <Link
+                  activeClass='active'
+                  to='about'
+                  spy={true}
+                  smooth={true}
+                  offset={10}
+                  duration={600}
+                  delay={50}
+                >
+                  about{" "}
+                </Link>
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='contact'>contact</NavLinks>
+              <NavLinks>
+                {" "}
+                <Link
+                  activeClass='active'
+                  to='contact'
+                  spy={true}
+                  smooth={true}
+                  offset={10}
+                  duration={600}
+                  delay={50}
+                >
+                  contact{" "}
+                </Link>
+              </NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>

@@ -1,7 +1,9 @@
 import styled from "styled-components";
+import Github from "../../../images/github-icon.svg";
 
 export const ProjectContainer = styled.div`
-  margin: 10% 0 0 0;
+  margin: 0;
+  padding-top: 10%;
   padding-left: 7%;
 `;
 
@@ -55,4 +57,16 @@ export const SliderTitle = styled.div`
   font-family: Space Grotesk;
   font-size: 30px;
   width: 300px;
+`;
+
+export const SliderContent = styled.div`
+  padding-top: 10rem;
+`;
+
+export const SliderCode = styled.button`
+  padding: 10px 0 0 50px;
+  background-image: url(${Github});
+  height: 50px;
+  border: none;
+  background-color: #e8eefe;
 `;

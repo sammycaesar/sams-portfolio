@@ -32,7 +32,6 @@ export const NavLogo = styled(LinkR)`
   cursor: pointer;
   font-size: 2.5rem;
   line-height: 50px;
-
   align-items: center;
   font-weight: regular;
   font-family: "Space Grotesk", sans-serif;
@@ -79,19 +78,15 @@ export const NavItem = styled.li`
   height: 80px;
 `;
 
-export const NavLinks = styled(LinkS)`
+export const NavLinks = styled.div`
   display: flex;
   text-decoration: none;
   padding: 0 2.5rem;
   height: 100%;
   cursor: pointer;
 
-  &:active {
-    border-bottom: 3px solid #7f7cff;
-  }
-
   &:hover {
     color: #7f7cff;
-    transition: 0.2s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
 `;

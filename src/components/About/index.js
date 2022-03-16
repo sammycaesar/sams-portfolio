@@ -1,6 +1,11 @@
 import React from "react";
+import BackArrow from "../../images/project-arrow.svg";
+
 import {
   AboutContainer,
+  Nav,
+  Back,
+  Link,
   IntroContainer,
   IntroContent,
   CapabilitiesContainer,
@@ -24,6 +29,11 @@ function AboutPage({
   return (
     <>
       <AboutContainer>
+        <Nav>
+          <Link to='/'>
+            <Back src={BackArrow} alt='go back home' />
+          </Link>
+        </Nav>
         <IntroContainer>
           <Heading>frontend developer & digital designer</Heading>
           <IntroContent>{introduction}</IntroContent>

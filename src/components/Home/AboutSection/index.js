@@ -6,6 +6,7 @@ import {
   Column2,
   Heading,
   Content,
+  Link,
   Button,
   AboutArrow,
 } from "./AboutElements";
@@ -17,10 +18,12 @@ const AboutSection = ({ id, headline, content }) => {
         <Column1>
           <Heading>{headline}</Heading>
           <Content>{content}</Content>
-          <Button>
-            about me
-            <AboutArrow src={Arrow} alt='click here to learn more about me' />
-          </Button>
+          <Link to='/about'>
+            <Button>
+              about me
+              <AboutArrow src={Arrow} alt='click here to learn more about me' />
+            </Button>
+          </Link>
         </Column1>
         <Column2></Column2>
       </AboutContainer>

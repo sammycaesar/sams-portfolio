@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as LinkR } from "react-router-dom";
 
 export const AboutContainer = styled.div`
   padding-left: 5%;
@@ -11,9 +12,23 @@ export const AboutContainer = styled.div`
   vertical-align: bottom;
 `;
 
+export const Nav = styled.div`
+  height: 100px;
+`;
+
+export const Back = styled.img`
+  height: 100px;
+  width: 200px;
+  transform: rotate(180deg);
+`;
+
+export const Link = styled(LinkR)`
+  height: 100px;
+`;
+
 export const IntroContainer = styled.div`
   height: 450px;
-  padding-top: 10%;
+  padding-top: 5%;
   display: grid;
   grid-template-columns: 60%;
 `;

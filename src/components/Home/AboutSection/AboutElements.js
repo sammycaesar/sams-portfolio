@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as LinkR } from "react-router-dom";
 
 export const AboutContainer = styled.div`
   margin-top: 10%;
@@ -30,6 +31,8 @@ export const Content = styled.p`
   width: 625px;
   color: #e8eeff;
 `;
+
+export const Link = styled(LinkR)``;
 
 export const Button = styled.button`
   color: white;
