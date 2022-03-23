@@ -13,8 +13,14 @@ export const FooterShape = styled.img`
   width: 100%;
   height: 500px;
   margin-bottom: -5rem;
+
+  @media screen and (max-width: 480px) {
+    height: 250px;
+  }
 `;
 
-export const FooterSocials = styled.div``;
-
-export const FooterInfo = styled.div``;
+export const FooterInfo = styled.div`
+  @media screen and (max-width: 480px) {
+    font-size: 1rem;
+  }
+`;

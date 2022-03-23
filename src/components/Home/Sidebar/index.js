@@ -16,9 +16,15 @@ const index = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="about">about</SidebarLink>
-          <SidebarLink to="projects">projects</SidebarLink>
-          <SidebarLink to="contact">contact</SidebarLink>
+          <SidebarLink to='about' onClick={toggle}>
+            about
+          </SidebarLink>
+          <SidebarLink to='projects' onClick={toggle}>
+            projects
+          </SidebarLink>
+          <SidebarLink to='contact' onClick={toggle}>
+            contact
+          </SidebarLink>
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>

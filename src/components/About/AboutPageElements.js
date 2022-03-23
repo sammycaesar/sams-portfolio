@@ -2,8 +2,7 @@ import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 
 export const AboutContainer = styled.div`
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 0 5% 0 5%;
   width: 100%;
   background: #e8eefe;
   color: #7f7cff;
@@ -41,6 +40,8 @@ export const IntroContent = styled.p`
 
 export const CapabilitiesContainer = styled.div`
   margin-top: 5%;
+  padding: 5% 2% 0 2%;
+  height: 350px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
@@ -48,16 +49,14 @@ export const CapabilitiesContainer = styled.div`
   border-width: 5px;
   border-color: #7f7cff;
   border-radius: 5px;
-  padding: 5% 2% 0 2%;
-  height: 350px;
   background-color: white;
 `;
 
 export const Heading = styled.h2`
+  width: 600px;
   color: #7f7cff;
   font-size: 50px;
   line-height: 50px;
-  width: 600px;
 `;
 
 export const SubHeading = styled.p`
@@ -77,15 +76,15 @@ export const Capabilities = styled.p`
 
 export const EducationContainer = styled.div`
   margin: 5% 0;
+  padding: 5% 2% 0 2%;
+  height: 350px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   border-top-style: solid;
   border-width: 5px;
-  border-color: #7f7cff;
   border-radius: 5px;
-  padding: 5% 2% 0 2%;
-  height: 350px;
+  border-color: #7f7cff;
   background-color: white;
 `;
 

@@ -1,9 +1,12 @@
 import React from "react";
 import Arrow from "../../../images/about-arrow.svg";
+import Kafe from "../../../images/kafe-website-wave.png";
+import Traffic from "../../../images/traffic-website-wave.png";
 import {
   AboutContainer,
   Column1,
   Column2,
+  Column3,
   Heading,
   Content,
   Link,
@@ -25,7 +28,8 @@ const AboutSection = ({ id, headline, content }) => {
             </Button>
           </Link>
         </Column1>
-        <Column2></Column2>
+        <Column2 src={Traffic} alt='Traffic Website'></Column2>
+        <Column3 src={Kafe} alt='Kafe Website'></Column3>
       </AboutContainer>
     </>
   );

@@ -11,10 +11,13 @@ export const Nav = styled.nav`
   position: relative;
   top: 0;
   margin: 0 5% 0 5%;
-  padding-top: 2%;
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 5rem;
   }
 `;
 
@@ -22,6 +25,10 @@ export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
+
+  @media screen and (min-width: 1400px) {
+    margin-right: 5rem;
+  }
 `;
 
 export const NavLeft = styled.div`
@@ -37,29 +44,38 @@ export const NavLogo = styled(LinkR)`
   font-family: "Space Grotesk", sans-serif;
   color: #7f7cff;
   text-decoration: none;
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const NavJob = styled.div`
   font-size: 2.5rem;
   line-height: 50px;
-
   align-items: center;
   font-weight: regular;
   font-family: "Space Grotesk", sans-serif;
   color: #404040;
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.5rem;
+    line-height: 20px;
+  }
 `;
 
 export const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     display: block;
     position: absolute;
     top: 0;
     right: 0;
     transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+    font-size: 1rem;
     cursor: pointer;
+    color: #7f7cff;
   }
 `;
 
@@ -69,7 +85,7 @@ export const NavMenu = styled.ul`
   list-style: none;
   text-align: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     display: none;
   } ;
 `;

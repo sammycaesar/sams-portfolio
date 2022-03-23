@@ -22,6 +22,7 @@ import {
   SliderContent,
   SliderCode,
 } from "./ProjectsSectionElements";
+import { Link } from "react-router-dom";
 
 SwiperCore.use([Mousewheel, Navigation]);
 
@@ -33,7 +34,7 @@ const ProjectsSection = () => {
         <Swiper
           direction={"horizontal"}
           mousewheel={{ sensitivity: 100, forceToAxis: true }}
-          slidesPerView={3}
+          slidesPerView={4}
           spaceBetween={10}
           navigation={true}
           loop={true}
@@ -43,9 +44,13 @@ const ProjectsSection = () => {
               slidesPerView: 1,
               spaceBetween: 10,
             },
+            "@0.50": {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
             "@0.75": {
-              slidesPerView: 2,
-              spaceBetween: 20,
+              slidesPerView: 1,
+              spaceBetween: 10,
             },
             "@1.20": {
               slidesPerView: 3,
@@ -65,10 +70,13 @@ const ProjectsSection = () => {
                   </SliderImageBorder>
                   <SliderContent>
                     <SliderTitle>{data.title}</SliderTitle>
-                    <SliderCode>
-                      {" "}
-                      <a href={data.url} target='_blank' rel='noreferrer' />
-                    </SliderCode>
+                    <Link
+                      to={data.url}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      <SliderCode />
+                    </Link>
                   </SliderContent>
                 </SliderItem>
               </SwiperSlide>

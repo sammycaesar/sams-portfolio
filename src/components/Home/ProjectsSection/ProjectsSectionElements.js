@@ -5,6 +5,10 @@ export const ProjectContainer = styled.div`
   margin: 0;
   padding-top: 10%;
   padding-left: 7%;
+
+  @media screen and (max-width: 480px) {
+    padding-top: 50%;
+  }
 `;
 
 export const Heading = styled.h2`
@@ -18,6 +22,11 @@ export const SliderItem = styled.div`
   border-radius: 0.25rem;
   background-color: #e8eeff;
   margin-bottom: 40%;
+
+  @media screen and (max-width: 480px) {
+    width: 20rem;
+    height: 30rem;
+  }
 `;
 
 export const SliderTech = styled.p`
@@ -45,6 +54,11 @@ export const SliderImageBorder = styled.div`
   background: #4040;
   border-radius: 0.5rem;
   border: 10px solid #fff;
+
+  @media screen and (max-width: 480px) {
+    width: 15rem;
+    height: 9.25rem;
+  }
 `;
 
 export const SliderImage = styled.div``;
@@ -57,14 +71,23 @@ export const SliderTitle = styled.div`
   font-family: Space Grotesk;
   font-size: 30px;
   width: 300px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const SliderContent = styled.div`
   padding-top: 10rem;
+  @media screen and (max-width: 480px) {
+    padding-top: 7rem;
+  }
 `;
 
 export const SliderCode = styled.button`
-  padding: 10px 0 0 50px;
+  margin-left: 12%;
+  margin-top: 5%;
+  padding: 0 0 0 50px;
   background-image: url(${Github});
   height: 50px;
   border: none;
