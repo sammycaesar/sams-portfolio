@@ -2,47 +2,69 @@ import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 
 export const AboutContainer = styled.div`
-  margin-top: 10%;
-  padding-left: 5%;
+  padding: 4em;
   height: 800px;
-  max-width: 100vw;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
   background: #404040;
   color: white;
 
   @media screen and (max-width: 480px) {
     font-size: 1.25rem;
+    padding: 2em;
+    height: 700px;
   }
+`;
+
+export const AboutBox = styled.div`
+  display: flex;
+  max-width: 1600px;
+  max-height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  position: relative
+  top: 50%;
+  left 50%;
 `;
 
 export const Column1 = styled.div`
-  padding: 30% 3% 0 5%;
-  grid-area: 1 / 1 / 2 / 2;
-
-  @media screen and (max-width: 480px) {
-  }
+  flex: 1 1 0%;
+  width: 80%;
 `;
 
-export const Column2 = styled.img`
-  grid-area: 1 / 2 / 2 / 3;
-  margin: 0 0 0 5rem;
-  transform: scale(0.8);
-  -webkit-transform: scale(0.8);
+export const Column2 = styled.div`
+  flex: 1 1 0%;
+  width: 20%;
+
+  flex-direction: column;
+  transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
 
   @media screen and (max-width: 1024px) {
     display: none;
   }
 `;
 
-export const Column3 = styled.img`
-  grid-area: 1 / 3 / 2 / 4;
-  margin: 30rem 0 0 -60rem;
-  transform: scale(0.8);
-  -webkit-transform: scale(0.8);
+export const Row1 = styled.img`
+  flex: 1;
+  padding-left: 6rem;
+
+  transform: scale(1);
+  -webkit-transform: scale(1);
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+`;
+export const Row2 = styled.img`
+  flex: 1;
+  padding-top: 8rem;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
 
   @media screen and (max-width: 1024px) {
     display: none;
@@ -50,10 +72,10 @@ export const Column3 = styled.img`
 `;
 
 export const Heading = styled.h2`
-  width: 616px;
   color: #e8eeff;
   font-size: 50px;
   line-height: 64px;
+  position: relative;
 
   @media screen and (max-width: 480px) {
     width: 75vw;
@@ -64,7 +86,6 @@ export const Heading = styled.h2`
 
 export const Content = styled.p`
   padding-top: 30px;
-  width: 625px;
   color: #e8eeff;
 
   @media screen and (max-width: 480px) {

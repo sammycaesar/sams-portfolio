@@ -2,13 +2,19 @@ import styled from "styled-components";
 import Github from "../../../images/github-icon.svg";
 
 export const ProjectContainer = styled.div`
-  margin: 0;
-  padding-top: 10%;
-  padding-left: 7%;
+  padding: 0 4em 4em 4em;
+  margin-top: -15em;
 
   @media screen and (max-width: 480px) {
-    padding-top: 50%;
+    padding: 10em 1em 1em 1em;
   }
+`;
+
+export const ProjectBox = styled.div`
+  max-width: 1600px;
+  flex: 1 1 0%;
+  margin-right: auto;
+  margin-left: auto;
 `;
 
 export const Heading = styled.h2`

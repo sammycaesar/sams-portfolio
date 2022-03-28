@@ -1,19 +1,23 @@
 import styled from "styled-components";
 
 export const InfoContainer = styled.div`
-  display: grid;
-  grid-template-columns: 65%;
-  margin: 10% 5% 0% 7%;
-  justify-content: left;
+  display: flex;
+  padding: 4em;
 
   @media screen and (max-width: 480px) {
-    padding-top: 10%;
+    padding: 2em;
   }
 `;
 
-export const Column = styled.div`
+export const InfoBox = styled.div`
+  flex: 1 1 0%;
+  max-width: 1600px;
+  max-height: 300px;
+  margin-right: auto;
+  margin-left: auto;
+
   @media screen and (max-width: 480px) {
-    width: 50vw;
+    max-width: 100vw;
   }
 `;
 

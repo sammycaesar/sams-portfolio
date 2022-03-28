@@ -1,11 +1,11 @@
 import React from "react";
-import { InfoContainer, Column, Heading, Content } from "./InfoElements";
+import { InfoContainer, InfoBox, Heading, Content } from "./InfoElements";
 
 const InfoSection = ({ id, headline, email, socials }) => {
   return (
     <>
       <InfoContainer id={id}>
-        <Column>
+        <InfoBox>
           <Heading>{headline}</Heading>
           <Content>{email}</Content>
           <Content>
@@ -26,7 +26,7 @@ const InfoSection = ({ id, headline, email, socials }) => {
               Github
             </a>
           </Content>
-        </Column>
+        </InfoBox>
       </InfoContainer>
     </>
   );

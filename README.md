@@ -8,7 +8,7 @@
 
   <p align="center">
 
-See it live here 👉 insert website link here
+See it live here 👉 https://www.sammmm.me
 
   </p>
 </div>
@@ -17,18 +17,19 @@ See it live here 👉 insert website link here
 
 ## About The Project
 
-![product-screenshot](/src/images/portfolio-project.png)
-
 Simple. A place to showcase my coding projects, in particular front end development projects!
+
+![product-screenshot](/src/images/portfolio-project.png)
 
 ### Built With
 
 - [React.js](https://reactjs.org/)
+- [Styled Components] (https://styled-components.com/)
 
 <!-- CONTACT -->
 
 ## Contact
 
-Samantha Caesar - [@linkedin_handle](https://www.linkedin.com/in/samanthacaesar/)
+Samantha Caesar - [my linkedIn](https://www.linkedin.com/in/samanthacaesar/)
 
 Project Link: [https://github.com/sammycaesar/sams-portfolio](https://github.com/sammycaesar/sams-portfolio)

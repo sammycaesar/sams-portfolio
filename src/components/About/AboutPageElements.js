@@ -3,7 +3,7 @@ import { Link as LinkR } from "react-router-dom";
 
 export const AboutContainer = styled.div`
   padding: 0 5% 0 5%;
-  width: 100%;
+  width: 100vw;
   background: #e8eefe;
   color: #7f7cff;
   display: grid;
@@ -30,6 +30,11 @@ export const IntroContainer = styled.div`
   padding-top: 5%;
   display: grid;
   grid-template-columns: 60%;
+
+  @media screen and (max-width: 480px) {
+    height: 35rem;
+    width: 30rem;
+  }
 `;
 
 export const IntroContent = styled.p`
@@ -50,6 +55,14 @@ export const CapabilitiesContainer = styled.div`
   border-color: #7f7cff;
   border-radius: 5px;
   background-color: white;
+
+  @media screen and (max-width: 480px) {
+    height: 40rem;
+    width: 90vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem repeat(2, 1fr);
+    padding: 10% 5% 0 10%;
+  }
 `;
 
 export const Heading = styled.h2`
@@ -57,6 +70,11 @@ export const Heading = styled.h2`
   color: #7f7cff;
   font-size: 50px;
   line-height: 50px;
+
+  @media screen and (max-width: 480px) {
+    width: 80vw;
+    font-size: 2rem;
+  }
 `;
 
 export const SubHeading = styled.p`
@@ -86,9 +104,22 @@ export const EducationContainer = styled.div`
   border-radius: 5px;
   border-color: #7f7cff;
   background-color: white;
+
+  @media screen and (max-width: 480px) {
+    height: 20rem;
+    width: 90vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr;
+    padding: 10% 5% 0 10%;
+  }
 `;
 
 export const Education = styled.p`
   padding-top: 30px;
   color: #7f7cff;
+
+  @media screen and (max-width: 480px) {
+    padding-top: 0;
+    padding-right: 50px;
+  }
 `;

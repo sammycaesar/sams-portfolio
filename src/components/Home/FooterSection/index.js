@@ -13,7 +13,7 @@ const FooterSection = () => {
     <FooterContainer id='footer'>
       <FooterWrapper>
         <FooterShape src={Circle} alt='Footer Shape' />
-        <FooterInfo>© 2022 samantha caesar | terms & conditions</FooterInfo>
+        <FooterInfo>© 2022 samantha caesar</FooterInfo>
       </FooterWrapper>
     </FooterContainer>
   );

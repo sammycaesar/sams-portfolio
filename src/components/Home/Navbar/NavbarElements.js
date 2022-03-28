@@ -3,14 +3,15 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  height: 150px;
   display: flex;
+  height: 150px;
+  max-width: 1600px;
   justify-content: center;
   align-items: center;
   font-size: 1.25rem;
   position: relative;
   top: 0;
-  margin: 0 5% 0 5%;
+  margin: auto 5% auto 5%;
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;

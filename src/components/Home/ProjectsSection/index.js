@@ -13,6 +13,7 @@ import { projectData } from "./data";
 
 import {
   ProjectContainer,
+  ProjectBox,
   Heading,
   SliderItem,
   SliderTech,
@@ -30,59 +31,66 @@ const ProjectsSection = () => {
   return (
     <>
       <ProjectContainer id='projects'>
-        <Heading>projects</Heading>
-        <Swiper
-          direction={"horizontal"}
-          mousewheel={{ sensitivity: 100, forceToAxis: true }}
-          slidesPerView={4}
-          spaceBetween={10}
-          navigation={true}
-          loop={true}
-          modules={[{ Navigation, Mousewheel }]}
-          breakpoints={{
-            "@0.00": {
-              slidesPerView: 1,
-              spaceBetween: 10,
-            },
-            "@0.50": {
-              slidesPerView: 1,
-              spaceBetween: 10,
-            },
-            "@0.75": {
-              slidesPerView: 1,
-              spaceBetween: 10,
-            },
-            "@1.20": {
-              slidesPerView: 3,
-              spaceBetween: 40,
-            },
-          }}
-        >
-          {projectData.map((data, i) => {
-            return (
-              <SwiperSlide>
-                <SliderItem key={i}>
-                  <SliderTech>{data.technology}</SliderTech>
-                  <SliderImageBorder>
-                    <SliderImage>
-                      <img src={data.image} alt='' className='project-images' />
-                    </SliderImage>
-                  </SliderImageBorder>
-                  <SliderContent>
-                    <SliderTitle>{data.title}</SliderTitle>
-                    <Link
-                      to={data.url}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <SliderCode />
-                    </Link>
-                  </SliderContent>
-                </SliderItem>
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
+        <ProjectBox>
+          <Heading>projects</Heading>
+          <Swiper
+            direction={"horizontal"}
+            mousewheel={{ sensitivity: 100, forceToAxis: true }}
+            slidesPerView={3}
+            spaceBetween={50}
+            navigation={true}
+            loop={true}
+            modules={[{ Navigation, Mousewheel }]}
+            breakpoints={{
+              "@0.00": {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+
+              "@0.10": {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              "@1.10": {
+                slidesPerView: 2,
+                spaceBetween: 10,
+              },
+              "@1.30": {
+                slidesPerView: 3,
+                spaceBetween: 10,
+              },
+            }}
+          >
+            {projectData.map((data, i) => {
+              return (
+                <SwiperSlide>
+                  <SliderItem key={i}>
+                    <SliderTech>{data.technology}</SliderTech>
+                    <SliderImageBorder>
+                      <SliderImage>
+                        <img
+                          src={data.image}
+                          alt=''
+                          className='project-images'
+                        />
+                      </SliderImage>
+                    </SliderImageBorder>
+                    <SliderContent>
+                      <SliderTitle>{data.title}</SliderTitle>
+                      <Link
+                        to={data.url}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        <SliderCode />
+                      </Link>
+                    </SliderContent>
+                  </SliderItem>
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
+        </ProjectBox>
       </ProjectContainer>
     </>
   );
