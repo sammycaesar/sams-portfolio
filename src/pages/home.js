@@ -11,7 +11,7 @@ import { contactSection } from "../components/Home/InfoSection/data";
 import { aboutmeSection } from "../components/Home/AboutSection/data";
 import { projectData } from "../components/Home/ProjectsSection/data";
 
-const Home = () => {
+function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -29,6 +29,6 @@ const Home = () => {
       <FooterSection />
     </>
   );
-};
+}
 
 export default Home;

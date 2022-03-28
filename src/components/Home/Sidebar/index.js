@@ -8,7 +8,7 @@ import {
   SidebarLink,
 } from "./SidebarElements";
 
-const index = ({ isOpen, toggle }) => {
+function index({ isOpen, toggle }) {
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
@@ -29,6 +29,6 @@ const index = ({ isOpen, toggle }) => {
       </SidebarWrapper>
     </SidebarContainer>
   );
-};
+}
 
 export default index;

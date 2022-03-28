@@ -1,7 +1,7 @@
 import React from "react";
 import { InfoContainer, InfoBox, Heading, Content } from "./InfoElements";
 
-const InfoSection = ({ id, headline, email, socials }) => {
+function InfoSection({ id, headline, email, socials }) {
   return (
     <>
       <InfoContainer id={id}>
@@ -30,6 +30,6 @@ const InfoSection = ({ id, headline, email, socials }) => {
       </InfoContainer>
     </>
   );
-};
+}
 
 export default InfoSection;

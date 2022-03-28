@@ -16,15 +16,7 @@ import {
   Education,
 } from "./AboutPageElements";
 
-function AboutPage({
-  introduction,
-  technology,
-  tools,
-  uni,
-  degree,
-  duration,
-  logo,
-}) {
+function AboutPage({ introduction, technology, tools, uni, degree, duration }) {
   return (
     <>
       <AboutContainer>

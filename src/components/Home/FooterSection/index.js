@@ -8,7 +8,7 @@ import {
   FooterInfo,
 } from "./FooterElements";
 
-const FooterSection = () => {
+function FooterSection() {
   return (
     <FooterContainer id='footer'>
       <FooterWrapper>
@@ -17,6 +17,6 @@ const FooterSection = () => {
       </FooterWrapper>
     </FooterContainer>
   );
-};
+}
 
 export default FooterSection;

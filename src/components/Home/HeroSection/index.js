@@ -13,7 +13,7 @@ import {
   Column4,
 } from "./HeroElements";
 
-const HeroSection = () => {
+function HeroSection() {
   return (
     <HeroContainer id='home'>
       {/* <HeroShape src={Shape} alt='Intro Shape' /> */}
@@ -25,6 +25,6 @@ const HeroSection = () => {
       </HeroBox>
     </HeroContainer>
   );
-};
+}
 
 export default HeroSection;

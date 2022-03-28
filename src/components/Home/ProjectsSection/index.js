@@ -27,7 +27,7 @@ import { Link } from "react-router-dom";
 
 SwiperCore.use([Mousewheel, Navigation]);
 
-const ProjectsSection = () => {
+function ProjectsSection() {
   return (
     <>
       <ProjectContainer id='projects'>
@@ -94,6 +94,6 @@ const ProjectsSection = () => {
       </ProjectContainer>
     </>
   );
-};
+}
 
 export default ProjectsSection;

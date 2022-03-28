@@ -14,7 +14,7 @@ import {
   NavLinks,
 } from "./NavbarElements";
 
-const Navbar = ({ toggle }) => {
+function Navbar({ toggle }) {
   return (
     <>
       <Nav>
@@ -80,6 +80,6 @@ const Navbar = ({ toggle }) => {
       </Nav>
     </>
   );
-};
+}
 
 export default Navbar;

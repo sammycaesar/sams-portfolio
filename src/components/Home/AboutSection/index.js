@@ -16,7 +16,7 @@ import {
   AboutArrow,
 } from "./AboutElements";
 
-const AboutSection = ({ id, headline, content }) => {
+function AboutSection({ id, headline, content }) {
   return (
     <>
       <AboutContainer id={id}>
@@ -42,6 +42,6 @@ const AboutSection = ({ id, headline, content }) => {
       </AboutContainer>
     </>
   );
-};
+}
 
 export default AboutSection;
