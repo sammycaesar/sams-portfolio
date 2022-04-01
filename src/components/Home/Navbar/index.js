@@ -20,8 +20,8 @@ function Navbar({ toggle }) {
       <Nav>
         <NavbarContainer>
           <NavLeft>
-            <NavLogo to='/'>samantha caesar</NavLogo>
-            <NavJob>front end developer</NavJob>
+            <NavLogo to='/'>sc</NavLogo>
+            {/* <NavJob>front end developer</NavJob> */}
           </NavLeft>
           <MobileIcon onClick={toggle}>
             <FaBars />

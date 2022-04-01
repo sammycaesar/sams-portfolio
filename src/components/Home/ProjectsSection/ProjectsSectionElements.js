@@ -2,8 +2,7 @@ import styled from "styled-components";
 import Github from "../../../images/github-icon.svg";
 
 export const ProjectContainer = styled.div`
-  padding: 0 4em 4em 4em;
-  margin-top: -15em;
+  padding: 4em 4em 4em 4em;
 
   @media screen and (max-width: 480px) {
     padding: 10em 1em 1em 1em;
@@ -98,4 +97,5 @@ export const SliderCode = styled.button`
   height: 50px;
   border: none;
   background-color: #e8eefe;
+  cursor: pointer;
 `;

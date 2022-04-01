@@ -5,13 +5,17 @@ import Shape from "../../../images/hero-shape.svg";
 export const HeroContainer = styled.div`
   display: flex;
   width: 100vw;
-  height: 1300px;
+  height: 900px;
   z-index: -100;
-  background-image: url(${Shape});
+
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
 
-  background-position-y: -30rem;
+  padding: 5rem 0;
+
   margin-top: -10rem;
 
   @media screen and (max-width: 480px) {
@@ -21,14 +25,15 @@ export const HeroContainer = styled.div`
 `;
 
 export const HeroBox = styled.div`
-  display: flex;
   max-width: 1600px;
-  max-height: 600px;
   margin-right: auto;
   margin-left: auto;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  width: 90%;
 
   @media screen and (max-width: 480px) {
     flex-direction: column;
@@ -40,77 +45,90 @@ export const HeroShape = styled.img`
   position: relative;
 `;
 
-export const Column1 = styled.img`
-  flex: 1%;
-  width: 25%;
-  transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  margin-left: 5rem;
-  margin-top: 5rem;
-
+export const Column1 = styled.h1`
+  flex: 1;
+  max-height: 125px;
+  padding-left: 10rem;
+  align-self: flex-start;
+  z-index: 1;
   @media screen and (min-width: 1500px) {
   }
   @media screen and (max-width: 480px) {
-    transform: scale(0.8) rotate(-25.73deg);
-    -webkit-transform: scale(0.8) rotate(-25.73deg);
-    margin: 10rem 0 0 0;
     width: 100%;
   }
 `;
 
-export const Column2 = styled.img`
+export const Column2 = styled.h1`
   flex: 1;
-  width: 25%;
-  transform: scale(0.8) rotate(-25.73deg);
-  -webkit-transform: scale(0.8) rotate(-25.73deg);
-  margin-top: 30rem;
-  margin-left: -10rem;
+  max-height: 125px;
+  font-weight: 400;
+  color: black;
+  align-self: center;
+  z-index: 1;
 
   @media screen and (max-width: 480px) {
     width: 100vw;
-    transform: scale(1) rotate(-25.73deg);
-    -webkit-transform: scale(1) rotate(-25.73deg);
     margin: 0;
   }
 `;
 
-export const Column3 = styled.img`
-  flex: 1%;
-  width: 25%;
-  transform: scale(1.2) rotate(-23.36deg);
-  -webkit-transform: scale(1.2) rotate(-23.36deg);
-  margin-top: 50rem;
-  margin-left: -5rem;
+export const FloatingIcons = styled.div`
+  cursor: pointer;
+  width: 1600px;
+  display: block;
+`;
 
-  @media screen and (max-width: 1024px) {
-    display: none;
+export const GithubIcon = styled.div``;
+
+export const LinkedinLink = styled.div`
+  background-color: #e4f1f8;
+  border-radius: 10rem;
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  &::before {
+    background-color: transparent;
+    border: 1px solid #e4f1f8;
+    border-radius: 100rem;
+    content: "";
+    height: 40rem;
+    width: 40rem;
+    pointer-events: none;
+    position: absolute;
   }
 `;
 
-export const Column4 = styled.img`
-  flex: 1 1 0%;
-  width: 25%;
-  transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  margin-left: -20rem;
+export const LinkedinIcon = styled.img`
+  width: 32px;
+  height: 32px;
+`;
 
-  @media screen and (max-width: 1024px) {
-    display: none;
+export const MailLink = styled.div`
+  background-color: #feece9;
+  border-radius: 10rem;
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-left: 15rem;
+
+  &::before {
+    background-color: transparent;
+    border: 1px solid #eee;
+    border-radius: 100rem;
+    content: "";
+    height: 30rem;
+    width: 30rem;
+    pointer-events: none;
+    position: absolute;
   }
 `;
 
-export const HeroH1 = styled.h1`
-  color: #404040;
-  text-align: center;
-  letter-spacing: 0.1rem;
-  line-height: 70px;
-  font-size: 3.5rem;
-
-  @media screen and (max-width: 768px) {
-    font-size: 40px;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 32px;
-  }
+export const MailIcon = styled.img`
+  width: 32px;
+  height: 32px;
 `;

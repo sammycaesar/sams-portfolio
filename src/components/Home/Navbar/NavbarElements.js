@@ -11,7 +11,8 @@ export const Nav = styled.nav`
   font-size: 1.25rem;
   position: relative;
   top: 0;
-  margin: auto 5% auto 5%;
+  margin: auto;
+  z-index: 100;
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -26,10 +27,6 @@ export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-
-  @media screen and (min-width: 1400px) {
-    margin-right: 5rem;
-  }
 `;
 
 export const NavLeft = styled.div`
