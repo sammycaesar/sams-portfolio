@@ -76,6 +76,7 @@ export const FloatingIcons = styled.div`
   cursor: pointer;
   width: 1600px;
   display: block;
+  position: absolute;
 `;
 
 export const GithubIcon = styled.div``;
@@ -88,6 +89,8 @@ export const LinkedinLink = styled.div`
   align-items: center;
   display: flex;
   justify-content: center;
+  margin-left: 50rem;
+  margin-top: -10rem;
 
   &::before {
     background-color: transparent;
