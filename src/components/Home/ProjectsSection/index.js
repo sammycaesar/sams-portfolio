@@ -15,6 +15,10 @@ import {
   ProjectContainer,
   ProjectBox,
   Heading,
+  Project1,
+  Project2,
+  Project3,
+  Project4,
   SliderItem,
   SliderTech,
   SliderImageBorder,
@@ -25,71 +29,42 @@ import {
 } from "./ProjectsSectionElements";
 import { Link } from "react-router-dom";
 
-SwiperCore.use([Mousewheel, Navigation]);
-
 function ProjectsSection() {
   return (
     <>
       <ProjectContainer id='projects'>
         <ProjectBox>
           <Heading>projects</Heading>
-          <Swiper
-            direction={"horizontal"}
-            mousewheel={{ sensitivity: 100, forceToAxis: true }}
-            slidesPerView={3}
-            spaceBetween={50}
-            navigation={true}
-            loop={true}
-            modules={[{ Navigation, Mousewheel }]}
-            breakpoints={{
-              "@0.00": {
-                slidesPerView: 1,
-                spaceBetween: 10,
-              },
 
-              "@0.10": {
-                slidesPerView: 1,
-                spaceBetween: 10,
-              },
-              "@1.10": {
-                slidesPerView: 2,
-                spaceBetween: 10,
-              },
-              "@1.30": {
-                slidesPerView: 3,
-                spaceBetween: 10,
-              },
-            }}
-          >
-            {projectData.map((data, i) => {
-              return (
-                <SwiperSlide>
-                  <SliderItem key={i}>
-                    <SliderTech>{data.technology}</SliderTech>
-                    <SliderImageBorder>
-                      <SliderImage>
-                        <img
-                          src={data.image}
-                          alt=''
-                          className='project-images'
-                        />
-                      </SliderImage>
-                    </SliderImageBorder>
-                    <SliderContent>
-                      <SliderTitle>{data.title}</SliderTitle>
-                      <Link
-                        to={data.url}
-                        target='_blank'
-                        rel='noopener noreferrer'
-                      >
-                        <SliderCode />
-                      </Link>
-                    </SliderContent>
-                  </SliderItem>
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
+          <Project1></Project1>
+          <Project2></Project2>
+          <Project3></Project3>
+          <Project4></Project4>
+
+          {projectData.map((data, i) => {
+            return (
+              <SwiperSlide>
+                <SliderItem key={i}>
+                  <SliderTech>{data.technology}</SliderTech>
+                  <SliderImageBorder>
+                    <SliderImage>
+                      <img src={data.image} alt='' className='project-images' />
+                    </SliderImage>
+                  </SliderImageBorder>
+                  <SliderContent>
+                    <SliderTitle>{data.title}</SliderTitle>
+                    <Link
+                      to={data.url}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      <SliderCode />
+                    </Link>
+                  </SliderContent>
+                </SliderItem>
+              </SwiperSlide>
+            );
+          })}
         </ProjectBox>
       </ProjectContainer>
     </>

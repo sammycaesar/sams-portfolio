@@ -21,6 +21,14 @@ export const Heading = styled.h2`
   padding-bottom: 4rem;
 `;
 
+export const Project1 = styled.div``;
+
+export const Project2 = styled.div``;
+
+export const Project3 = styled.div``;
+
+export const Project4 = styled.div``;
+
 export const SliderItem = styled.div`
   width: 400px;
   height: 600px;

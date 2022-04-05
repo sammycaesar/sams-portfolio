@@ -5,18 +5,15 @@ import Shape from "../../../images/hero-shape.svg";
 export const HeroContainer = styled.div`
   display: flex;
   width: 100vw;
-  height: 900px;
+  height: 600px;
   z-index: -100;
-
+  background-color: #fffdfb;
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-box-align: center;
   align-items: center;
   -webkit-box-pack: justify;
-
-  padding: 5rem 0;
-
-  margin-top: -10rem;
+  padding: 0em 4em;
 
   @media screen and (max-width: 480px) {
     height: 800px;
@@ -47,10 +44,11 @@ export const HeroShape = styled.img`
 
 export const Column1 = styled.h1`
   flex: 1;
-  max-height: 125px;
+  max-height: 100px;
   padding-left: 10rem;
   align-self: flex-start;
   z-index: 1;
+
   @media screen and (min-width: 1500px) {
   }
   @media screen and (max-width: 480px) {
@@ -60,7 +58,7 @@ export const Column1 = styled.h1`
 
 export const Column2 = styled.h1`
   flex: 1;
-  max-height: 125px;
+  max-height: 100px;
   font-weight: 400;
   color: black;
   align-self: center;
@@ -76,10 +74,35 @@ export const FloatingIcons = styled.div`
   cursor: pointer;
   width: 1600px;
   display: block;
-  position: absolute;
+  position: relative;
+`;
+export const GithubLink = styled.div`
+  background-color: #d9d9d9;
+  border-radius: 10rem;
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-left: 40rem;
+  margin-top: 0rem;
+
+  &::before {
+    background-color: transparent;
+    border: 1px solid #e4f1f8;
+    border-radius: 100rem;
+    content: "";
+    height: 25rem;
+    width: 25rem;
+    pointer-events: none;
+    position: absolute;
+  }
 `;
 
-export const GithubIcon = styled.div``;
+export const GithubIcon = styled.img`
+  width: 40px;
+  height: 40px;
+`;
 
 export const LinkedinLink = styled.div`
   background-color: #e4f1f8;
@@ -90,15 +113,15 @@ export const LinkedinLink = styled.div`
   display: flex;
   justify-content: center;
   margin-left: 50rem;
-  margin-top: -10rem;
+  margin-top: -20rem;
 
   &::before {
     background-color: transparent;
     border: 1px solid #e4f1f8;
     border-radius: 100rem;
     content: "";
-    height: 40rem;
-    width: 40rem;
+    height: 20rem;
+    width: 20rem;
     pointer-events: none;
     position: absolute;
   }
@@ -117,7 +140,7 @@ export const MailLink = styled.div`
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-left: 15rem;
+  margin-left: 0rem;
 
   &::before {
     background-color: transparent;
