@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&family=Space+Grotesk:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@100;300;400&family=Space+Grotesk:wght@100;300;400;700&display=swap");
 
 *,
 html {
@@ -55,7 +55,7 @@ p {
 a,
 u {
   color: #404040;
-  text-decoration-color: #7f7cff;
+  text-decoration-color: #b3a5d9;
   text-decoration-thickness: 3px;
   text-underline-offset: 5px;
 }

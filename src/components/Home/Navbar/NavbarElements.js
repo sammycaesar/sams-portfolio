@@ -41,7 +41,7 @@ export const NavLogo = styled(LinkR)`
   align-items: center;
   font-weight: regular;
   font-family: "Space Grotesk", sans-serif;
-  color: #7f7cff;
+  color: #b3a5d9;
   text-decoration: none;
 
   @media screen and (max-width: 480px) {
@@ -74,7 +74,7 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1rem;
     cursor: pointer;
-    color: #7f7cff;
+    color: #b3a5d9;
   }
 `;
 

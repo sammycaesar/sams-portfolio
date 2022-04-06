@@ -77,7 +77,7 @@ export const FloatingIcons = styled.div`
   position: relative;
 `;
 export const GithubLink = styled.div`
-  background-color: #d9d9d9;
+  background-color: #eddff0;
   border-radius: 10rem;
   width: 80px;
   height: 80px;
@@ -89,7 +89,7 @@ export const GithubLink = styled.div`
 
   &::before {
     background-color: transparent;
-    border: 1px solid #e4f1f8;
+    border: 1px solid #fdf0ff;
     border-radius: 100rem;
     content: "";
     height: 25rem;
@@ -144,7 +144,7 @@ export const MailLink = styled.div`
 
   &::before {
     background-color: transparent;
-    border: 1px solid #eee;
+    border: 1px solid #feece9;
     border-radius: 100rem;
     content: "";
     height: 30rem;

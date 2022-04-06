@@ -11,26 +11,51 @@ export const ProjectContainer = styled.div`
 
 export const ProjectBox = styled.div`
   max-width: 1600px;
-  flex: 1 1 0%;
-  margin-right: auto;
-  margin-left: auto;
+  display: flex;
+  align-self: flex-start;
 `;
 
 export const Heading = styled.h2`
   font-size: 40px;
-  padding-bottom: 4rem;
+  padding-bottom: 40px;
 `;
 
-export const Project1 = styled.div``;
+export const Project = styled.div`
+  width: 25rem;
+  height: 600px;
+  background-color: #fcf7f2;
+  margin-right: 5rem;
+`;
 
-export const Project2 = styled.div``;
+export const ProjectContent = styled.div`
+  padding: 4rem 1rem 0 1rem;
+`;
 
-export const Project3 = styled.div``;
+export const ProjectTitle = styled.h2`
+  padding-bottom: 2rem;
+  font-weight: 100;
+`;
 
-export const Project4 = styled.div``;
+export const ProjectTech = styled.h3`
+  font-weight: 100;
+`;
+
+export const ProjectImage = styled.img`
+  display: block;
+  object-fit: fill;
+  width: 100%;
+`;
+
+export const ProjectImageWrapper = styled.div`
+  background-color: #f0d8fe;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+`;
 
 export const SliderItem = styled.div`
-  width: 400px;
+  width: 500px;
   height: 600px;
   border-radius: 0.25rem;
   background-color: #e8eeff;
