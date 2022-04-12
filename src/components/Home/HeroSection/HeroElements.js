@@ -13,27 +13,30 @@ export const HeroContainer = styled.div`
   -webkit-box-align: center;
   align-items: center;
   -webkit-box-pack: justify;
-  padding: 0em 4em;
 
-  @media screen and (max-width: 480px) {
-    height: 800px;
-    background-position-y: -5rem;
+  @media screen and (min-width: 600px) and (max-width: 950px) {
+    padding-top: 10rem;
+  }
+
+  @media screen and (min-width: 200px) and (max-width: 500px) {
+    height: 80vh;
+    padding-bottom: 10rem;
   }
 `;
 
 export const HeroBox = styled.div`
-  max-width: 1600px;
+  max-width: 1200px;
+  width: 90%;
   margin-right: auto;
   margin-left: auto;
   height: 250px;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
 
-  width: 90%;
-
-  @media screen and (max-width: 480px) {
-    flex-direction: column;
+  @media screen and (max-width: 950px) {
+    line-height: 3rem;
+    text-align: center;
+    padding: 0 2em;
   }
 `;
 
@@ -49,10 +52,10 @@ export const Column1 = styled.h1`
   align-self: flex-start;
   z-index: 1;
 
-  @media screen and (min-width: 1500px) {
-  }
-  @media screen and (max-width: 480px) {
-    width: 100%;
+  @media screen and (max-width: 950px) {
+    padding: 0;
+    max-height: 150px;
+    align-self: center;
   }
 `;
 
@@ -64,17 +67,21 @@ export const Column2 = styled.h1`
   align-self: center;
   z-index: 1;
 
-  @media screen and (max-width: 480px) {
-    width: 100vw;
-    margin: 0;
+  @media screen and (max-width: 950px) {
+    max-height: 150px;
+    padding-top: 1.5rem;
   }
 `;
 
 export const FloatingIcons = styled.div`
   cursor: pointer;
-  width: 1600px;
+  max-width: 1200px;
   display: block;
   position: relative;
+
+  @media screen and (max-width: 325px) {
+    display: none;
+  }
 `;
 export const GithubLink = styled.div`
   background-color: #eddff0;
@@ -89,13 +96,28 @@ export const GithubLink = styled.div`
 
   &::before {
     background-color: transparent;
-    border: 1px solid #fdf0ff;
+    border: 2px solid #fdf0ff;
     border-radius: 100rem;
     content: "";
     height: 25rem;
     width: 25rem;
     pointer-events: none;
     position: absolute;
+  }
+
+  @media screen and (max-width: 950px) {
+    transform: translate(350%, 100%);
+    margin: 0;
+
+    &::before {
+      height: 25rem;
+      width: 25rem;
+    }
+
+    @media screen and (min-width: 200px) and (max-width: 500px) {
+      transform: translate(150%, 50%);
+      margin: 0;
+    }
   }
 `;
 
@@ -117,13 +139,28 @@ export const LinkedinLink = styled.div`
 
   &::before {
     background-color: transparent;
-    border: 1px solid #e4f1f8;
+    border: 2px solid #e4f1f8;
     border-radius: 100rem;
     content: "";
-    height: 20rem;
-    width: 20rem;
+    height: 25rem;
+    width: 25rem;
     pointer-events: none;
     position: absolute;
+  }
+
+  @media screen and (min-width: 701px) and (max-width: 950px) {
+    transform: translate(600%, -400%);
+    margin: 0;
+  }
+
+  @media screen and (max-width: 700px) {
+    transform: translate(280%, -300%);
+    margin: 0;
+
+    &::before {
+      height: 22rem;
+      width: 22rem;
+    }
   }
 `;
 
@@ -140,17 +177,32 @@ export const MailLink = styled.div`
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-left: 0rem;
+  margin-left: 5rem;
 
   &::before {
     background-color: transparent;
-    border: 1px solid #feece9;
+    border: 2px solid #feece9;
     border-radius: 100rem;
     content: "";
     height: 30rem;
     width: 30rem;
     pointer-events: none;
     position: absolute;
+  }
+
+  @media screen and (min-width: 701px) and (max-width: 950px) {
+    transform: translate(200%, -500%);
+    margin: 0;
+  }
+
+  @media screen and (max-width: 700px) {
+    transform: translate(-50%, -500%);
+    margin: 0;
+
+    &::before {
+      height: 20rem;
+      width: 20rem;
+    }
   }
 `;
 

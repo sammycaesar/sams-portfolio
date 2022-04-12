@@ -2,17 +2,24 @@ import styled from "styled-components";
 import Github from "../../../images/github-icon.svg";
 
 export const ProjectContainer = styled.div`
-  padding: 4em 4em 4em 4em;
+  padding: 4em;
+  background-color: #fffdfb;
 
   @media screen and (max-width: 480px) {
-    padding: 10em 1em 1em 1em;
+    padding: 2em;
   }
 `;
 
 export const ProjectBox = styled.div`
-  max-width: 1600px;
   display: flex;
   align-self: flex-start;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
 `;
 
 export const Heading = styled.h2`
@@ -23,21 +30,49 @@ export const Heading = styled.h2`
 export const Project = styled.div`
   width: 25rem;
   height: 600px;
-  background-color: #fcf7f2;
   margin-right: 5rem;
+  background-color: white;
+  border: 1px solid #d4d4d4;
+  border-radius: 0.2rem;
+
+  @media screen and (max-width: 900px) {
+    margin: 0 0 5rem 0;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 900px) {
+    height: 700px;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 500px;
+  }
 `;
 
 export const ProjectContent = styled.div`
-  padding: 4rem 1rem 0 1rem;
+  padding: 0rem 1rem 0 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  flex: 2 0px;
 `;
 
 export const ProjectTitle = styled.h2`
-  padding-bottom: 2rem;
+  padding-top: 4rem;
+  width: 75%;
   font-weight: 100;
+  order: 1;
+`;
+
+export const ProjectArrow = styled.img`
+  width: 2rem;
+  padding-top: 4rem;
+  order: 2;
 `;
 
 export const ProjectTech = styled.h3`
   font-weight: 100;
+  padding-top: 1rem;
+  order: 3;
 `;
 
 export const ProjectImage = styled.img`
@@ -52,83 +87,4 @@ export const ProjectImageWrapper = styled.div`
   position: relative;
   width: 100%;
   z-index: 2;
-`;
-
-export const SliderItem = styled.div`
-  width: 500px;
-  height: 600px;
-  border-radius: 0.25rem;
-  background-color: #e8eeff;
-  margin-bottom: 40%;
-
-  @media screen and (max-width: 480px) {
-    width: 20rem;
-    height: 30rem;
-  }
-`;
-
-export const SliderTech = styled.p`
-  position: relative;
-  width: 200px;
-  height: 50px;
-  top: 8%;
-  left: 12%;
-  background: #7f7cff;
-  border-radius: 0.5rem;
-  border-style: none;
-  color: white;
-  font-size: 20px;
-  text-align: left;
-  padding: 2% 0 0 5%;
-`;
-
-export const SliderImageBorder = styled.div`
-  position: relative;
-  align-items: center;
-  width: 300px;
-  height: 180px;
-  top: 15%;
-  left: 12%;
-  background: #4040;
-  border-radius: 0.5rem;
-  border: 10px solid #fff;
-
-  @media screen and (max-width: 480px) {
-    width: 15rem;
-    height: 9.25rem;
-  }
-`;
-
-export const SliderImage = styled.div``;
-
-export const SliderTitle = styled.div`
-  position: relative;
-  top: 30%;
-  left: 12%;
-  color: #7f7cff;
-  font-family: Space Grotesk;
-  font-size: 30px;
-  width: 300px;
-
-  @media screen and (max-width: 480px) {
-    font-size: 1.5rem;
-  }
-`;
-
-export const SliderContent = styled.div`
-  padding-top: 10rem;
-  @media screen and (max-width: 480px) {
-    padding-top: 7rem;
-  }
-`;
-
-export const SliderCode = styled.button`
-  margin-left: 12%;
-  margin-top: 5%;
-  padding: 0 0 0 50px;
-  background-image: url(${Github});
-  height: 50px;
-  border: none;
-  background-color: #e8eefe;
-  cursor: pointer;
 `;

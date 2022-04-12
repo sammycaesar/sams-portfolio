@@ -26,7 +26,7 @@ function AboutPage({ introduction, technology, tools, uni, degree, duration }) {
           </Link>
         </Nav>
         <IntroContainer>
-          <Heading>frontend developer & digital designer</Heading>
+          <Heading>developer & digital designer</Heading>
           <IntroContent>{introduction}</IntroContent>
         </IntroContainer>
 

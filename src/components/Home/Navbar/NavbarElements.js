@@ -5,21 +5,19 @@ import { Link as LinkS } from "react-scroll";
 export const Nav = styled.nav`
   display: flex;
   height: 100px;
-  max-width: 1600px;
+  max-width: 1200px;
   justify-content: center;
   align-items: center;
   font-size: 1.25rem;
   position: relative;
   top: 0;
-  margin: auto;
-  z-index: 100;
-  background-color: #fffdfb;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -100;
+  padding: 4em 0;
+
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
-  }
-
-  @media screen and (max-width: 480px) {
-    height: 5rem;
   }
 `;
 
@@ -27,7 +25,10 @@ export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 4em 4em 0em 4em;
+
+  @media screen and (max-width: 950px) {
+    padding: 0;
+  } ;
 `;
 
 export const NavLeft = styled.div`
@@ -44,8 +45,8 @@ export const NavLogo = styled(LinkR)`
   color: #b3a5d9;
   text-decoration: none;
 
-  @media screen and (max-width: 480px) {
-    font-size: 1.5rem;
+  @media screen and (max-width: 950px) {
+    display: none;
   }
 `;
 
@@ -57,7 +58,7 @@ export const NavJob = styled.div`
   font-family: "Space Grotesk", sans-serif;
   color: #404040;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 950px) {
     font-size: 1.5rem;
     line-height: 20px;
   }
@@ -66,13 +67,13 @@ export const NavJob = styled.div`
 export const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 950px) {
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 2rem;
     cursor: pointer;
     color: #b3a5d9;
   }
@@ -84,7 +85,7 @@ export const NavMenu = styled.ul`
   list-style: none;
   text-align: center;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 950px) {
     display: none;
   } ;
 `;

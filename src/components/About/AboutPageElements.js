@@ -2,13 +2,15 @@ import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 
 export const AboutContainer = styled.div`
-  padding: 0 5% 0 5%;
+  padding: 0 5%;
   width: 100vw;
-  background: #e8eefe;
   color: #7f7cff;
   display: grid;
   white-space: pre-line;
   vertical-align: bottom;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
 `;
 
 export const Nav = styled.div`
@@ -26,14 +28,12 @@ export const Link = styled(LinkR)`
 `;
 
 export const IntroContainer = styled.div`
-  height: 450px;
-  padding-top: 5%;
+  height: 40vh;
   display: grid;
-  grid-template-columns: 60%;
+  grid-template-columns: 100%;
 
-  @media screen and (max-width: 480px) {
-    height: 35rem;
-    width: 30rem;
+  @media screen and (max-width: 950px) {
+    height: 30vh;
   }
 `;
 
@@ -50,13 +50,11 @@ export const CapabilitiesContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  border-top-style: solid;
-  border-width: 5px;
-  border-color: #7f7cff;
-  border-radius: 5px;
+  border: 1px solid #d4d4d4;
+  border-radius: 0.2rem;
   background-color: white;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 950px) {
     height: 40rem;
     width: 90vw;
     grid-template-columns: 1fr;
@@ -67,11 +65,11 @@ export const CapabilitiesContainer = styled.div`
 
 export const Heading = styled.h2`
   width: 600px;
-  color: #7f7cff;
+  color: #9581ca;
   font-size: 50px;
   line-height: 50px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 950px) {
     width: 80vw;
     font-size: 2rem;
   }
@@ -83,7 +81,7 @@ export const SubHeading = styled.p`
 `;
 
 export const Info = styled.p`
-  color: #7f7cff;
+  color: #9581ca;
   font-size: 20px;
   line-height: 30px;
 `;
@@ -99,13 +97,11 @@ export const EducationContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  border-top-style: solid;
-  border-width: 5px;
-  border-radius: 5px;
-  border-color: #7f7cff;
+  border: 1px solid #d4d4d4;
+  border-radius: 0.2rem;
   background-color: white;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 950px) {
     height: 20rem;
     width: 90vw;
     grid-template-columns: 1fr;
@@ -118,7 +114,7 @@ export const Education = styled.p`
   padding-top: 30px;
   color: #7f7cff;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 950px) {
     padding-top: 0;
     padding-right: 50px;
   }

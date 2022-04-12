@@ -11,8 +11,9 @@ export const SidebarContainer = styled.aside`
   align-items: center;
   top: 0;
   left: 0;
+  padding-top: 4rem;
   transition: 1s ease-in-out;
-  background-color: #7f7cff;
+  background-color: #b3a5d9;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 `;
@@ -50,7 +51,7 @@ export const SidebarLink = styled(LinkS)`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-decoration: none;
   list-style: none;
   transition: 0.2s ease-in-out;
