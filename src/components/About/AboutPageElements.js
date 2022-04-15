@@ -2,15 +2,15 @@ import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 
 export const AboutContainer = styled.div`
-  padding: 0 5%;
   width: 100vw;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 5%;
   color: #7f7cff;
   display: grid;
   white-space: pre-line;
   vertical-align: bottom;
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
 `;
 
 export const Nav = styled.div`
@@ -18,8 +18,8 @@ export const Nav = styled.div`
 `;
 
 export const Back = styled.img`
-  height: 100px;
   width: 200px;
+  height: 100px;
   transform: rotate(180deg);
 `;
 
@@ -44,9 +44,9 @@ export const IntroContent = styled.p`
 `;
 
 export const CapabilitiesContainer = styled.div`
+  height: 350px;
   margin-top: 5%;
   padding: 5% 2% 0 2%;
-  height: 350px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
@@ -91,9 +91,9 @@ export const Capabilities = styled.p`
 `;
 
 export const EducationContainer = styled.div`
+  height: 350px;
   margin: 5% 0;
   padding: 5% 2% 0 2%;
-  height: 350px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;

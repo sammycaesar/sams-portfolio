@@ -3,18 +3,17 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  display: flex;
   height: 100px;
   max-width: 1200px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4em 1em;
   justify-content: center;
   align-items: center;
   font-size: 1.25rem;
   position: relative;
   top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: -100;
-  padding: 4em 0;
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -22,11 +21,12 @@ export const Nav = styled.nav`
 `;
 
 export const NavbarContainer = styled.div`
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  width: 100%;
 
   @media screen and (max-width: 950px) {
+    height: 200px;
     padding: 0;
   } ;
 `;
@@ -82,8 +82,8 @@ export const MobileIcon = styled.div`
 export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
-  list-style: none;
   text-align: center;
+  list-style: none;
 
   @media screen and (max-width: 950px) {
     display: none;

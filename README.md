@@ -19,7 +19,7 @@ See it live here 👉 https://www.sammmm.me
 
 Simple. A place to showcase my coding projects, in particular front end development projects!
 
-![product-screenshot](/src/images/portfolio-project.png)
+![product-screenshot]()
 
 ### Built With
 

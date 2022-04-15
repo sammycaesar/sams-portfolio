@@ -5,15 +5,15 @@ export const InfoContainer = styled.div`
   padding: 4em;
 
   @media screen and (max-width: 480px) {
-    padding: 2em;
     height: 300px;
+    padding: 2em;
   }
 `;
 
 export const InfoBox = styled.div`
-  flex: 1 1 0%;
   max-width: 1200px;
   max-height: 300px;
+  flex: 1 1 0%;
   margin-right: auto;
   margin-left: auto;
 `;

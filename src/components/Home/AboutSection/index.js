@@ -1,7 +1,9 @@
 import React from "react";
+
 import Arrow from "../../../images/about-arrow.svg";
 import Kafe from "../../../images/kafe-website-wave.png";
 import Traffic from "../../../images/traffic-website-wave.png";
+
 import {
   AboutContainer,
   AboutBox,
@@ -34,6 +36,7 @@ function AboutSection({ id, headline, content }) {
               </Button>
             </Link>
           </Column1>
+
           <Column2>
             <Row1 src={Traffic} alt='Traffic Website'></Row1>
             <Row2 src={Kafe} alt='Kafe Website'></Row2>

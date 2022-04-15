@@ -6,10 +6,8 @@ import HeroSection from "../components/Home/HeroSection";
 import InfoSection from "../components/Home/InfoSection";
 import ProjectsSection from "../components/Home/ProjectsSection";
 import AboutSection from "../components/Home/AboutSection";
-
 import { contactSection } from "../components/Home/InfoSection/data";
 import { aboutmeSection } from "../components/Home/AboutSection/data";
-import { projectData } from "../components/Home/ProjectsSection/data";
 
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +21,7 @@ function Home() {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
-      <ProjectsSection {...projectData} />
+      <ProjectsSection />
       <AboutSection {...aboutmeSection} />
       <InfoSection {...contactSection} />
     </>

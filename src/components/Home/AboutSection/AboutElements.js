@@ -4,7 +4,7 @@ import { Link as LinkR } from "react-router-dom";
 export const AboutContainer = styled.div`
   padding: 4em;
   height: 700px;
-  background-color: #9581ca;
+  background-color: var(--purple-background);
 
   @media screen and (max-width: 480px) {
     font-size: 1.25rem;
@@ -35,13 +35,12 @@ export const Column1 = styled.div`
 `;
 
 export const Column2 = styled.div`
-  flex: 1 1 0%;
   width: 20%;
-
+  display: flex;
+  flex: 1 1 0%;
   flex-direction: column;
   transform: scale(0.7);
   -webkit-transform: scale(0.7);
-  display: flex;
   -webkit-box-pack: center;
   justify-content: center;
 
@@ -102,13 +101,18 @@ export const Button = styled.button`
   padding-left: 3%;
   margin-top: 10%;
   color: white;
+  background: #b3a5d9;
   font-family: "Space Grotesk", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   text-align: left;
-  background: #b3a5d9;
   border: 1px solid white;
   border-radius: 0.2rem;
+
+  &:hover {
+    background-color: #c1adf7;
+    transition: 0.5s ease-out;
+  }
 
   @media screen and (max-width: 480px) {
     padding-left: 5%;
@@ -116,8 +120,8 @@ export const Button = styled.button`
 `;
 
 export const AboutArrow = styled.img`
+  width: 30%;
   height: 30%;
   padding-left: 10%;
   vertical-align: middle;
-  width: 30%;
 `;

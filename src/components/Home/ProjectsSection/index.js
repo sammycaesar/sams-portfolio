@@ -1,7 +1,4 @@
-// eslint-disable-next-line
 import React, { useRef, useState } from "react";
-
-import { projectData } from "./data";
 
 import {
   ProjectContainer,
@@ -12,15 +9,12 @@ import {
   ProjectTitle,
   ProjectTech,
   ProjectContent,
+  ProjectLink,
   ProjectArrow,
 } from "./ProjectsSectionElements";
-import { Link } from "react-router-dom";
 
 import Kafe from "../../../images/kafe-project-mockup.png";
 import Traffic from "../../../images/pricing-mockup.png";
-import Portfolio from "../../../images/portfolio-project.png";
-import Placeholder from "../../../images/coming-soon.png";
-
 import Arrow from "../../../images/up-arrow.svg";
 
 function ProjectsSection() {
@@ -32,21 +26,35 @@ function ProjectsSection() {
             <ProjectImageWrapper>
               <ProjectImage src={Kafe} alt=''></ProjectImage>
             </ProjectImageWrapper>
-
             <ProjectContent>
               <ProjectTitle>kafé drink recipes</ProjectTitle>{" "}
-              <ProjectArrow src={Arrow} />
+              <ProjectLink>
+                <a
+                  href='https://github.com/sammycaesar/kafe-drinks'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <ProjectArrow src={Arrow} />
+                </a>
+              </ProjectLink>
               <ProjectTech>reactjs & api</ProjectTech>
             </ProjectContent>
           </Project>
-
           <Project>
             <ProjectImageWrapper>
               <ProjectImage src={Traffic} alt=''></ProjectImage>
             </ProjectImageWrapper>
             <ProjectContent>
               <ProjectTitle>interactive pricing</ProjectTitle>{" "}
-              <ProjectArrow src={Arrow} />
+              <ProjectLink>
+                <a
+                  href='https://github.com/sammycaesar/interactive-pricing-component'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <ProjectArrow src={Arrow} />
+                </a>
+              </ProjectLink>
               <ProjectTech>javascript</ProjectTech>
             </ProjectContent>
           </Project>

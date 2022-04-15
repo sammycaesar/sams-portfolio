@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Github from "../../../images/github-icon.svg";
 
 export const ProjectContainer = styled.div`
   padding: 4em;
@@ -12,10 +11,10 @@ export const ProjectContainer = styled.div`
 
 export const ProjectBox = styled.div`
   display: flex;
-  align-self: flex-start;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1200px;
+  align-self: flex-start;
 
   @media screen and (max-width: 900px) {
     flex-direction: column;
@@ -35,38 +34,58 @@ export const Project = styled.div`
   border: 1px solid #d4d4d4;
   border-radius: 0.2rem;
 
-  @media screen and (max-width: 900px) {
-    margin: 0 0 5rem 0;
-    width: 100%;
+  @media screen and (max-width: 1150px) {
+    margin: 2rem auto 0 auto;
+    width: 80%;
   }
 
-  @media screen and (min-width: 481px) and (max-width: 900px) {
+  @media screen and (min-width: 481px) and (max-width: 750px) {
     height: 700px;
   }
 
   @media screen and (max-width: 480px) {
     height: 500px;
+    width: 90%;
   }
 `;
 
 export const ProjectContent = styled.div`
-  padding: 0rem 1rem 0 1rem;
   display: flex;
   flex-flow: row wrap;
   flex: 2 0px;
+  padding: 0rem 1rem 0 1rem;
+
+  @media screen and (max-width: 480px) {
+    font-size: 1rem;
+  }
 `;
 
 export const ProjectTitle = styled.h2`
-  padding-top: 4rem;
   width: 75%;
+  padding-top: 4rem;
   font-weight: 100;
   order: 1;
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.5rem;
+  }
+`;
+
+export const ProjectLink = styled.div`
+  order: 2;
 `;
 
 export const ProjectArrow = styled.img`
   width: 2rem;
-  padding-top: 4rem;
-  order: 2;
+  margin-top: 4rem;
+  z-index: 10;
+  transition: 1s ease-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.3);
+    transition: 2s ease-out;
+  }
 `;
 
 export const ProjectTech = styled.h3`

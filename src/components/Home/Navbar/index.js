@@ -1,13 +1,12 @@
 import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
-
 import { FaBars } from "react-icons/fa";
+
 import {
   Nav,
   NavbarContainer,
   NavLeft,
   NavLogo,
-  NavJob,
   MobileIcon,
   NavMenu,
   NavItem,
@@ -21,7 +20,6 @@ function Navbar({ toggle }) {
         <NavbarContainer>
           <NavLeft>
             <NavLogo to='/'>sc</NavLogo>
-            {/* <NavJob>front end developer</NavJob> */}
           </NavLeft>
           <MobileIcon onClick={toggle}>
             <FaBars />

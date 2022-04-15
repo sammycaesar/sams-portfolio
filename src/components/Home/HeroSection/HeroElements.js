@@ -1,6 +1,15 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
-import Shape from "../../../images/hero-shape.svg";
+const bounce = keyframes`
+{
+  from {
+      transform: translate3d(0, 0, 0);
+  }
+  to {
+      transform: translate3d(0, 10px, 0);
+  }
+}
+`;
 
 export const HeroContainer = styled.div`
   display: flex;
@@ -25,18 +34,18 @@ export const HeroContainer = styled.div`
 `;
 
 export const HeroBox = styled.div`
-  max-width: 1200px;
-  width: 90%;
-  margin-right: auto;
-  margin-left: auto;
-  height: 250px;
   display: flex;
   flex-direction: column;
+  width: 90%;
+  height: 250px;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
 
   @media screen and (max-width: 950px) {
+    padding: 0 2em;
     line-height: 3rem;
     text-align: center;
-    padding: 0 2em;
   }
 `;
 
@@ -46,9 +55,9 @@ export const HeroShape = styled.img`
 `;
 
 export const Column1 = styled.h1`
-  flex: 1;
   max-height: 100px;
-  padding-left: 10rem;
+  padding-left: 15rem;
+  flex: 1;
   align-self: flex-start;
   z-index: 1;
 
@@ -60,16 +69,18 @@ export const Column1 = styled.h1`
 `;
 
 export const Column2 = styled.h1`
-  flex: 1;
   max-height: 100px;
-  font-weight: 400;
-  color: black;
+  padding-left: 10rem;
+  flex: 1;
   align-self: center;
   z-index: 1;
+  font-weight: 400;
+  color: black;
 
   @media screen and (max-width: 950px) {
     max-height: 150px;
     padding-top: 1.5rem;
+    padding-left: 0;
   }
 `;
 
@@ -83,40 +94,51 @@ export const FloatingIcons = styled.div`
     display: none;
   }
 `;
+
 export const GithubLink = styled.div`
-  background-color: #eddff0;
-  border-radius: 10rem;
+  display: flex;
   width: 80px;
   height: 80px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
   margin-left: 40rem;
   margin-top: 0rem;
+  background-color: #eddff0;
+  border-radius: 10rem;
+  align-items: center;
+  justify-content: center;
+  animation: ${bounce} 1.5s linear infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+
+  &:hover::before {
+    background-color: #eddff0;
+    opacity: 0.3;
+    z-index: -1;
+    transition: 0.5s ease-out;
+  }
 
   &::before {
+    height: 25rem;
+    width: 25rem;
     background-color: transparent;
     border: 2px solid #fdf0ff;
     border-radius: 100rem;
     content: "";
-    height: 25rem;
-    width: 25rem;
     pointer-events: none;
     position: absolute;
+    transition: 1s ease-out;
   }
 
   @media screen and (max-width: 950px) {
-    transform: translate(350%, 100%);
-    margin: 0;
+    margin-left: 5rem;
+    margin-top: 2rem;
 
     &::before {
-      height: 25rem;
       width: 25rem;
+      height: 25rem;
     }
 
     @media screen and (min-width: 200px) and (max-width: 500px) {
-      transform: translate(150%, 50%);
-      margin: 0;
+      margin-left: 5rem;
     }
   }
 `;
@@ -127,77 +149,103 @@ export const GithubIcon = styled.img`
 `;
 
 export const LinkedinLink = styled.div`
-  background-color: #e4f1f8;
-  border-radius: 10rem;
+  display: flex;
   width: 80px;
   height: 80px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
   margin-left: 50rem;
   margin-top: -20rem;
+  border-radius: 10rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4f1f8;
+  transition: 1s ease-out;
+  animation: ${bounce} 2s linear infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+
+  &:hover::before {
+    background-color: #e4f1f8;
+    opacity: 0.3;
+    z-index: -1;
+    transition: 0.5s ease-out;
+  }
 
   &::before {
+    height: 25rem;
+    width: 25rem;
     background-color: transparent;
     border: 2px solid #e4f1f8;
     border-radius: 100rem;
     content: "";
-    height: 25rem;
-    width: 25rem;
     pointer-events: none;
     position: absolute;
+    transition: 1s ease-out;
   }
 
   @media screen and (min-width: 701px) and (max-width: 950px) {
-    transform: translate(600%, -400%);
-    margin: 0;
+    margin-left: 25rem;
+    margin-bottom: 20rem;
   }
 
   @media screen and (max-width: 700px) {
-    transform: translate(280%, -300%);
-    margin: 0;
+    margin-left: 10rem;
+    margin-top: -30rem;
 
     &::before {
-      height: 22rem;
       width: 22rem;
+      height: 22rem;
     }
   }
 `;
 
 export const LinkedinIcon = styled.img`
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
 `;
 
 export const MailLink = styled.div`
+width: 80px;
+height: 80px;
+margin-left: 10rem;
   background-color: #feece9;
   border-radius: 10rem;
-  width: 80px;
-  height: 80px;
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-left: 5rem;
+  transition: transform 2s ease;
+  position: absolute;
+  cursor: pointer;
+  transition: 1s ease-out;
+  animation: ${bounce} 1.75s linear infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+
+  &:hover::before {
+    background-color: #feece9;
+    opacity: 0.3;
+    z-index: -1;
+    transition: 0.5s ease-out;
+  }
 
   &::before {
+    height: 30rem;
+    width: 30rem;
     background-color: transparent;
     border: 2px solid #feece9;
     border-radius: 100rem;
     content: "";
-    height: 30rem;
-    width: 30rem;
     pointer-events: none;
     position: absolute;
+    transition: 1s ease-out;
   }
 
   @media screen and (min-width: 701px) and (max-width: 950px) {
-    transform: translate(200%, -500%);
-    margin: 0;
+    margin-top: -30rem;
   }
 
   @media screen and (max-width: 700px) {
-    transform: translate(-50%, -500%);
-    margin: 0;
+    margin-top: -2rem;
+    margin-left: -2rem;
 
     &::before {
       height: 20rem;
@@ -207,6 +255,6 @@ export const MailLink = styled.div`
 `;
 
 export const MailIcon = styled.img`
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
 `;
