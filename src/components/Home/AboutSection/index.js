@@ -1,8 +1,6 @@
 import React from "react";
 
 import Arrow from "../../../images/about-arrow.svg";
-import Kafe from "../../../images/kafe-website-wave.png";
-import Traffic from "../../../images/traffic-website-wave.png";
 
 import {
   AboutContainer,
@@ -11,6 +9,10 @@ import {
   Column2,
   Row1,
   Row2,
+  Row3,
+  Icon1,
+  Icon2,
+  Icon3,
   Heading,
   Content,
   Link,
@@ -38,8 +40,16 @@ function AboutSection({ id, headline, content }) {
           </Column1>
 
           <Column2>
-            <Row1 src={Traffic} alt='Traffic Website'></Row1>
-            <Row2 src={Kafe} alt='Kafe Website'></Row2>
+            <Row1>
+              <Icon1>if</Icon1>
+            </Row1>
+            <Row2>
+              <Icon2>&#123; &#125;</Icon2>
+            </Row2>
+
+            <Row3>
+              <Icon3>&#60; / &#62;</Icon3>
+            </Row3>
           </Column2>
         </AboutBox>
       </AboutContainer>

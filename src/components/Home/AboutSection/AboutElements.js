@@ -1,5 +1,16 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Link as LinkR } from "react-router-dom";
+
+const bounce = keyframes`
+{
+  from {
+      transform: translate3d(0, 0, 0);
+  }
+  to {
+      transform: translate3d(0, 15px, 0);
+  }
+}
+`;
 
 export const AboutContainer = styled.div`
   padding: 4em;
@@ -39,31 +50,87 @@ export const Column2 = styled.div`
   display: flex;
   flex: 1 1 0%;
   flex-direction: column;
-  transform: scale(0.7);
-  -webkit-transform: scale(0.7);
   -webkit-box-pack: center;
   justify-content: center;
 
-  @media screen and (max-width: 1024px) {
-    display: none;
-  }
-`;
-
-export const Row1 = styled.img`
-  flex: 1;
-  padding-left: 10rem;
-  transform: scale(1.5);
-  -webkit-transform: scale(1.5);
+  animation: ${bounce} 1.5s linear infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
 
   @media screen and (max-width: 1024px) {
     display: none;
   }
 `;
-export const Row2 = styled.img`
+
+export const Row1 = styled.div`
   flex: 1;
-  padding-top: 8rem;
-  transform: scale(1.2);
-  -webkit-transform: scale(1.2);
+  transform: translate(30%, 50%);
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+`;
+export const Row2 = styled.div`
+  flex: 1;
+  transform: translate(20%, 30%);
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+`;
+
+export const Row3 = styled.div`
+  flex: 1;
+  transform: translate(60%, -10%);
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+`;
+
+export const Icon1 = styled.h2`
+  display: flex;
+  background: transparent;
+  color: #f9d5ff;
+  width: 18rem;
+  height: 10rem;
+  border-radius: 5rem;
+  font-size: 7rem;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #f9d5ff;
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+`;
+
+export const Icon2 = styled.h2`
+  display: flex;
+  background: #f9d5ff;
+  color: #9581ca;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+`;
+
+export const Icon3 = styled.h2`
+  display: flex;
+  background: transparent;
+  color: #f9d5ff;
+  width: 18rem;
+  height: 10rem;
+  border-radius: 1rem;
+  font-size: 4rem;
+
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #f9d5ff;
 
   @media screen and (max-width: 1024px) {
     display: none;
