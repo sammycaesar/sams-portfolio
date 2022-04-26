@@ -64,7 +64,7 @@ function ProjectsSection() {
               <ProjectImage src={Lingo} alt=''></ProjectImage>
             </ProjectImageWrapper>
             <ProjectContent>
-              <ProjectTitle>social language learning platform</ProjectTitle>{" "}
+              <ProjectTitle>language learning platform</ProjectTitle>{" "}
               <ProjectLink>
                 <a
                   href='https://github.com/sammycaesar/lingo'
