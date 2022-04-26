@@ -16,6 +16,7 @@ import {
 import Kafe from "../../../images/kafe-project-mockup.png";
 import Traffic from "../../../images/pricing-mockup.png";
 import Arrow from "../../../images/up-arrow.svg";
+import Lingo from "../../../images/lingo-language.png";
 
 function ProjectsSection() {
   return (
@@ -56,6 +57,24 @@ function ProjectsSection() {
                 </a>
               </ProjectLink>
               <ProjectTech>javascript</ProjectTech>
+            </ProjectContent>
+          </Project>
+          <Project>
+            <ProjectImageWrapper>
+              <ProjectImage src={Lingo} alt=''></ProjectImage>
+            </ProjectImageWrapper>
+            <ProjectContent>
+              <ProjectTitle>social language learning platform</ProjectTitle>{" "}
+              <ProjectLink>
+                <a
+                  href='https://github.com/sammycaesar/lingo'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <ProjectArrow src={Arrow} />
+                </a>
+              </ProjectLink>
+              <ProjectTech>web3 technologies & reactjs</ProjectTech>
             </ProjectContent>
           </Project>
         </ProjectBox>
