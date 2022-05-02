@@ -23,7 +23,7 @@ function HeroSection() {
     <HeroContainer id='home'>
       <HeroBox>
         <Column1>samantha caesar</Column1>
-        <Column2>fullstack developer</Column2>
+        <Column2>portfolio</Column2>
 
         <FloatingIcons>
           <GithubLink>
