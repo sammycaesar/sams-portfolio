@@ -28,17 +28,4 @@ export const educationContent = {
   duration: "2021 - 2022",
 };
 
-export const workContent = [
-  {
-    logo: "",
-    company: "",
-    title: "",
-    duration: "",
-  },
-  {
-    logo: "",
-    company: "",
-    title: "",
-    duration: "",
-  },
-];
+

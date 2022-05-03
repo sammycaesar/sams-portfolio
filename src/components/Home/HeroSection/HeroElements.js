@@ -152,7 +152,7 @@ export const LinkedinLink = styled.div`
   display: flex;
   width: 80px;
   height: 80px;
-  margin-left: 50rem;
+  margin-left: 55rem;
   margin-top: -20rem;
   border-radius: 10rem;
   align-items: center;
@@ -204,9 +204,9 @@ export const LinkedinIcon = styled.img`
 `;
 
 export const MailLink = styled.div`
-width: 80px;
-height: 80px;
-margin-left: 10rem;
+  width: 80px;
+  height: 80px;
+  margin-left: 10rem;
   background-color: #feece9;
   border-radius: 10rem;
   align-items: center;

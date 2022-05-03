@@ -80,7 +80,7 @@ export const Row2 = styled.div`
 
 export const Row3 = styled.div`
   flex: 1;
-  transform: translate(60%, -10%);
+  transform: translate(50%, -10%);
 
   @media screen and (max-width: 1024px) {
     display: none;

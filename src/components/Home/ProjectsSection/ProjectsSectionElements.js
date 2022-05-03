@@ -14,7 +14,17 @@ export const ProjectBox = styled.div`
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  align-self: flex-start;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+`;
+
+export const Row = styled.div`
+  display: flex;
 
   @media screen and (max-width: 900px) {
     flex-direction: column;
@@ -27,15 +37,16 @@ export const Heading = styled.h2`
 `;
 
 export const Project = styled.div`
-  width: 25rem;
+  width: 30rem;
   height: 600px;
-  margin-right: 5rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
   background-color: white;
   border: 1px solid #d4d4d4;
   border-radius: 0.2rem;
 
-  @media screen and (max-width: 1150px) {
-    margin: 2rem auto 0 auto;
+  @media screen and (max-width: 1300px) {
+    margin: 0
     width: 80%;
   }
 
@@ -44,7 +55,7 @@ export const Project = styled.div`
   }
 
   @media screen and (max-width: 480px) {
-    height: 500px;
+    height: 400px;
     width: 90%;
   }
 `;
@@ -65,9 +76,11 @@ export const ProjectTitle = styled.h2`
   padding-top: 4rem;
   font-weight: 100;
   order: 1;
+  line-height: 50px;
 
   @media screen and (max-width: 480px) {
     font-size: 1.5rem;
+    line-height: 30px;
   }
 `;
 
@@ -76,7 +89,7 @@ export const ProjectLink = styled.div`
 `;
 
 export const ProjectArrow = styled.img`
-  width: 2rem;
+  width: 3rem;
   margin-top: 4rem;
   z-index: 10;
   transition: 1s ease-out;
@@ -95,15 +108,19 @@ export const ProjectTech = styled.h3`
 `;
 
 export const ProjectImage = styled.img`
-  display: block;
-  object-fit: fill;
+  object-fit: cover;
   width: 100%;
+  height: 100%;
 `;
 
 export const ProjectImageWrapper = styled.div`
-  background-color: #f0d8fe;
   overflow: hidden;
   position: relative;
   width: 100%;
   z-index: 2;
+  height: 20rem;
+
+  @media screen and (max-width: 900px) {
+    height: 10rem;
+  }
 `;
