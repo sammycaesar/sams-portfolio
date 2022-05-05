@@ -44,6 +44,7 @@ export const Project = styled.div`
   background-color: white;
   border: 1px solid #d4d4d4;
   border-radius: 0.2rem;
+  
 
   @media screen and (max-width: 1300px) {
     margin: 0

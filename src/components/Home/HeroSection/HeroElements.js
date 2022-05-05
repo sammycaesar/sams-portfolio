@@ -56,10 +56,9 @@ export const HeroShape = styled.img`
 
 export const Column1 = styled.h1`
   max-height: 100px;
-  padding-left: 15rem;
   flex: 1;
-  align-self: flex-start;
   z-index: 1;
+  margin-left: 15rem;
 
   @media screen and (max-width: 950px) {
     padding: 0;
@@ -214,7 +213,6 @@ export const MailLink = styled.div`
   justify-content: center;
   transition: transform 2s ease;
   position: absolute;
-  cursor: pointer;
   transition: 1s ease-out;
   animation: ${bounce} 1.75s linear infinite;
   animation-direction: alternate;

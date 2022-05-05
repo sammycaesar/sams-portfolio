@@ -75,9 +75,7 @@ ul a {
 a,
 u {
   color: var(--muted-text);
-  text-decoration-color: var(--purple-button);
-  text-decoration-thickness: 3px;
-  text-underline-offset: 5px;
+  text-decoration: none;
 }
 
 .project-images {

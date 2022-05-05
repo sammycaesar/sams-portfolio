@@ -27,80 +27,80 @@ function ProjectsSection() {
         <ProjectBox>
           <Row>
             <Project>
-              <ProjectImageWrapper>
-                <ProjectImage src={Kafe} alt=''></ProjectImage>
-              </ProjectImageWrapper>
-              <ProjectContent>
-                <ProjectTitle>kafé drink recipes</ProjectTitle>{" "}
-                <ProjectLink>
-                  <a
-                    href='https://github.com/sammycaesar/kafe-drinks'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
+              <a
+                href='https://github.com/sammycaesar/kafe-drinks'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <ProjectImageWrapper>
+                  <ProjectImage src={Kafe} alt=''></ProjectImage>
+                </ProjectImageWrapper>
+                <ProjectContent>
+                  <ProjectTitle>kafé drink recipes</ProjectTitle>{" "}
+                  <ProjectLink>
                     <ProjectArrow src={Arrow} />
-                  </a>
-                </ProjectLink>
-                <ProjectTech>reactjs & api</ProjectTech>
-              </ProjectContent>
+                  </ProjectLink>
+                  <ProjectTech>reactjs & api</ProjectTech>
+                </ProjectContent>
+              </a>
             </Project>
             <Project>
-              <ProjectImageWrapper>
-                <ProjectImage src={Traffic} alt=''></ProjectImage>
-              </ProjectImageWrapper>
-              <ProjectContent>
-                <ProjectTitle>interactive pricing</ProjectTitle>{" "}
-                <ProjectLink>
-                  <a
-                    href='https://github.com/sammycaesar/interactive-pricing-component'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
+              <a
+                href='https://github.com/sammycaesar/interactive-pricing-component'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <ProjectImageWrapper>
+                  <ProjectImage src={Traffic} alt=''></ProjectImage>
+                </ProjectImageWrapper>
+                <ProjectContent>
+                  <ProjectTitle>interactive pricing</ProjectTitle>{" "}
+                  <ProjectLink>
                     <ProjectArrow src={Arrow} />
-                  </a>
-                </ProjectLink>
-                <ProjectTech>javascript</ProjectTech>
-              </ProjectContent>
+                  </ProjectLink>
+                  <ProjectTech>javascript</ProjectTech>
+                </ProjectContent>
+              </a>
             </Project>
           </Row>
 
           <Row>
             <Project>
-              <ProjectImageWrapper>
-                <ProjectImage src={Lingo} alt=''></ProjectImage>
-              </ProjectImageWrapper>
-              <ProjectContent>
-                <ProjectTitle>language platform</ProjectTitle>{" "}
-                <ProjectLink>
-                  <a
-                    href='https://github.com/sammycaesar/lingo'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
+              <a
+                href='https://github.com/sammycaesar/lingo'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <ProjectImageWrapper>
+                  <ProjectImage src={Lingo} alt=''></ProjectImage>
+                </ProjectImageWrapper>
+                <ProjectContent>
+                  <ProjectTitle>language platform</ProjectTitle>{" "}
+                  <ProjectLink>
                     <ProjectArrow src={Arrow} />
-                  </a>
-                </ProjectLink>
-                <ProjectTech>reactjs</ProjectTech>
-              </ProjectContent>
+                  </ProjectLink>
+                  <ProjectTech>reactjs</ProjectTech>
+                </ProjectContent>
+              </a>
             </Project>
 
             <Project>
-              <ProjectImageWrapper>
-                <ProjectImage src={Wine} alt=''></ProjectImage>
-              </ProjectImageWrapper>
-              <ProjectContent>
-                <ProjectTitle>wine o'clock landing page</ProjectTitle>{" "}
-                <ProjectLink>
-                  <a
-                    href='https://github.com/sammycaesar/coming-soon-signup'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
+              <a
+                href='https://github.com/sammycaesar/coming-soon-signup'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <ProjectImageWrapper>
+                  <ProjectImage src={Wine} alt=''></ProjectImage>
+                </ProjectImageWrapper>
+                <ProjectContent>
+                  <ProjectTitle>wine o'clock landing page</ProjectTitle>{" "}
+                  <ProjectLink>
                     <ProjectArrow src={Arrow} />
-                  </a>
-                </ProjectLink>
-                <ProjectTech>vanilla js</ProjectTech>
-              </ProjectContent>
+                  </ProjectLink>
+                  <ProjectTech>vanilla js</ProjectTech>
+                </ProjectContent>
+              </a>
             </Project>
           </Row>
         </ProjectBox>
